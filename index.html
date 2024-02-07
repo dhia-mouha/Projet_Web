@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <title> Hello</title>
+        
+
+    </head>
+
+
+<body>
+    <header>
+        <h1 style="color:rgb(0, 0, 0);">Dhia Mouha</h1>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projets et tâches</a></li>
+                <li><a href="#">Liste employés</a></li>
+                <li><a href="#">Inscription</a></li>
+            </ul>
+        </nav>
+        <img src="C:\Users\USER\Downloads\img1 (1).jpg" alt="Header Image" class="custom-image" width="1500" height="600" style="margin-top: 20px; margin-left: 0px;">
+    </header>
+
+        <p style="text-align:center; color: rgb(0, 0, 0); font-size: 300%;">Welcome to our page</p>
+    <p style="color: rgb(0, 0, 0); text-align: center;"> nous proposons une gestion des taches et projets dans votre entreprise</p>
+         <br>
+         <img src="C:\Users\USER\Downloads\img2.jpg" alt="Description of the image" class="custom-image" width="300" height="200" style="margin-top: 100px; margin-left: 0px;">
+         <img src="C:\Users\USER\Downloads\img3.jpg" alt="Description of the image" class="custom-image" width="300" height="200" style="margin-top: 100px; margin-left: 250px;">
+         <img src="C:\Users\USER\Downloads\img4.jpg" alt="Description of the image" class="custom-image" width="300" height="200" style="margin-top: 100px; margin-left: 300px;">
+<br>
+<p style="text-align: left; color: black;">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+<p style="text-align: center; color: black;">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+<p style="text-align: right; color: black;">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+<button onclick="window.location.href='file:///C:/Users/USER/OneDrive/Bureau/front-end/inscription.html'; return false;">Cliquez ici pour inscrire!</button>
+
+
+    <script>
+function greetings()
+{
+    console.log("welcome!");
+}
+greetings();
+
+function calculate(x, y) {
+    const pi = 3.14;
+    if (x > 0) {
+        return (x + y) * pi;
+    } else {
+        return y * pi;
+    }
+}
+function Nombre_parfait(n) {
+    let sum = 1;
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+        if (n % i === 0) {
+            sum += i;
+            if (i !== n / i) {
+                sum += n / i;
+            }
+        }
+    }
+}
+
+let T = [17, 38, 10, 25, 72];
+
+        T.sort((a, b) => a - b);
+        console.log("Tableau trié :", T);
+
+        T.push(12);
+        console.log("Tableau avec l'élément 12 ajouté :", T);
+
+        ;
+        console.log("Tableau renversé :", T.reverse());
+
+        console.log("Indice de l'élément 17 :", T.indexOf(17));
+
+        T.splice(T.indexOf(38), 1);
+        console.log("Tableau après suppression de l'élément 38 :", T);
+
+        console.log("Sous-tableau du 2e au 3e élément :", T.slice(1, 3));
+        console.log("Sous-tableau du début au 2e élément :", T.slice(0, 2));
+        console.log("Sous-tableau du 3e élément à la fin de la liste :", T.slice(2));
+        
+function entierAleatoire(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+const chiffreAleatoire = entierAleatoire(0, 10);
+const nombreEssais = 3;
+
+for (let essai = 1; essai <= nombreEssais; essai++) {
+    const devine = parseInt(prompt("Devinez le chiffre entre 0 et 10 :"));
+
+    if (devine === chiffreAleatoire) {
+        alert("Félicitations, vous avez deviné le chiffre !");
+        break;
+    } else {
+       
+        const essaisRestants = nombreEssais - essai;
+        alert(`Mauvaise réponse. Il vous reste ${essaisRestants} essai(s).`);
+    }
+}
+
+alert(`Le chiffre correct était ${chiffreAleatoire}.`);
+
+
+</script>
+
+</body>
+<footer>
+    <hr>
+    <p>
+        Vous pouvez nous contacter par email : <a href="mailto:contact@esprit.tn">contact@esprit.tn</a><br>
+        Adresse: Ghazela, Tunis
+    </p>
+    <hr>
+</footer>
+</html>
